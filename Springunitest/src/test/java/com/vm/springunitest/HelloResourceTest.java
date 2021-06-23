@@ -25,17 +25,16 @@ public class HelloResourceTest {
 	HelloResource helloResource;
 
 	
-	  @Test 
-	  public void testSayHello() throws Exception
-	  { 
-		  mockMvc =
-	  MockMvcBuilders.standaloneSetup(helloResource).build();
-	  
-	  mockMvc.perform(MockMvcRequestBuilders.get("/hello"))
-	  .andExpect(MockMvcResultMatchers.status().isOk())
-	  .andExpect(MockMvcResultMatchers.content().string("hello abdul"));
-	  
-	  }
+	/*
+	 * @Test public void testSayHello() throws Exception { mockMvc =
+	 * MockMvcBuilders.standaloneSetup(helloResource).build();
+	 * 
+	 * mockMvc.perform(MockMvcRequestBuilders.get("/hello"))
+	 * .andExpect(MockMvcResultMatchers.status().isOk())
+	 * .andExpect(MockMvcResultMatchers.content().string("hello abdul"));
+	 * 
+	 * }
+	 */
 	 
 
 	@Test
